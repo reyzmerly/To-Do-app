@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px; /* Added border-radius */
+  background-color: #ecf0f1; /* Added background color */
+  margin-bottom: 8px; /* Added margin between tasks */
+  border: 1px solid #bdc3c7;
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* Style for task text and buttons container */
+.task-content {
+  display: flex;
+  align-items: center;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+li button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  margin-left: 8px; /* Added margin for spacing */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+li button:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+}
+
+/* Styling for completed tasks */
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Styling for pinned tasks */
+li.pinned {
+  background-color: #ffecb3;
+}
+img {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
